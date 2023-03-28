@@ -4,6 +4,8 @@ module.exports = ({ env }) => ({
     config: {
       provider: 'aws-s3',
       providerOptions: {
+        baseUrl: env('CDN_URL'),
+        rootPath: env('CDN_ROOT_PATH'),
         accessKeyId: env('SCALEWAY_ACCESS_KEY_ID'),
         secretAccessKey: env('SCALEWAY_ACCESS_SECRET'),
         endpoint: env('SCALEWAY_ENDPOINT'), // e.g. "s3.fr-par.scw.cloud"
