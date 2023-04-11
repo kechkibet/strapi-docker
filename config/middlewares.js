@@ -5,7 +5,7 @@ module.exports = [
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
-  'strapi::body',
+  // 'strapi::body',
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
@@ -42,7 +42,7 @@ module.exports = [
       jsonLimit: "5096mb", // modify JSON body
       textLimit: "5096mb", // modify text body
       formidable: {
-        maxFileSize: 5094 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
+        maxFileSize: 5000 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
       },
     },
   },

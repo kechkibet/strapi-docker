@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
   // ...
   upload: {
     config: {
-      sizeLimit: 5096 * 1024 * 1024, // 5096mb in bytes
+      sizeLimit: 5000 * 1024 * 1024, // 5096mb in bytes
       provider: 'aws-s3',
       providerOptions: {
         baseUrl: env('CDN_URL'),
